@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example 1</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+
+<body>
+
+  <form name="mainFrom" onsubmit="return false">
+
+    <fieldset>
+      <legend>Customer Information</legend>
+
+      <label for="custname"> Name:</label>
+      <input name="custname" id="custname" placeholder="Last name" type="text" />
+
+      <label for="city">City:</label>
+      <input name="city" id="city" type="text" />
+
+    
+
+      <label for="payment">Payment Type</label>
+      <select name="payment" id="payment" size="1">
+        <option value="Debit"> Debit</option>
+        <option value="Bit Coin" selected="selected"> Bit Coin</option>
+        <option value="Pure Gold"> Pure Gold</option>
+      </select>
+
+      <input id="sub" type="submit" value="Submit" onclick="formSubmitEvent()">
+
+    </fieldset>
+
+    <fieldset>
+      <legend>My Customers</legend>
+
+      <div id="renderList"></div>
+   
+
+    </fieldset>
+
+  </form>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
